@@ -1,6 +1,3 @@
----
-import { formatBookmark, generateSlug, loadBookmarks, normalizeUrl, STORAGE_KEY } from '../lib/bookmarks.js';
----
 
 <section class="bookmark-panel" aria-label="Bookmark manager">
   <form id="add-bookmark">
@@ -34,6 +31,8 @@ import { formatBookmark, generateSlug, loadBookmarks, normalizeUrl, STORAGE_KEY 
 </section>
 
 <script>
+  import { formatBookmark, generateSlug, loadBookmarks, normalizeUrl, STORAGE_KEY } from '../lib/bookmarks.js';
+
   const form = document.getElementById('add-bookmark');
   const input = document.getElementById('url');
   const list = document.getElementById('bookmark-list');
